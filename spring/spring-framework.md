@@ -41,6 +41,18 @@ objects.
 	Let's Spring Framework know that this class will consume beans.
 	This is based from Component so this means this the class becomes a bean as well.
 
+- [@Import](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Import.html)
+
+	Let's you import beans from a class (usually a configuration class which obviously uses @Configuration)
+
+- [@ImportResource](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/ImportResource.html)
+
+	Let's you import beans from an xml resource.
+	This seems the same as @Import but this sources beans from an xml resource file.
+
+	This means configuration.xml files are like @Configuration annotations. 
+	Whic also means <context:component-scan /> tags are like @ComponentScan in classes.
+
 ## Common Terminologies
 
 - [Beans](https://docs.spring.io/spring-framework/reference/core/beans/definition.html)
